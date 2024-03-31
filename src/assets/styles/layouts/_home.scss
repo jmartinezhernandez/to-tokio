@@ -1,0 +1,353 @@
+// Estilos generales
+body {
+  margin: 0;
+  padding: 0;
+}
+
+// Estilos del encabezado
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-family: $font-special;
+}
+
+.header__title {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.header__nav {
+  margin-top: 20px;
+}
+
+
+.header__link {
+  text-decoration: none;
+  color: $color-green;
+  transition: color 0.3s ease;
+  font-size: 1.2rem;
+  margin-right: 40px;
+}
+
+.header__link:hover{
+  color: $color-red;
+}
+
+// Estilos del héroe
+.hero {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: calc(100vh - 100px);
+  overflow: hidden;
+}
+
+.hero__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__content {
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  font-family: $font-special;
+}
+
+.hero__content--p1{
+color: $color-green;
+font-size: 1.8rem;
+}
+
+.hero__content--p2 {
+padding-left: 10px;
+color: $color-red;
+font-size: 2.2rem;
+}
+
+// Estilos del contenido principal
+.main {
+  margin-top: 50px;
+  padding: 20px;
+  
+}
+
+// Estilos del grid de lugares de interés
+
+#lugares-interes {
+  padding: 50px 20px;
+
+}
+
+.title__section {
+  font-family: $font-special;
+  margin-bottom: 80px;
+  color: $color-red;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+
+.grid__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.grid__item {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.grid__item:hover{
+  transform: translateY(-5px);
+  
+}
+
+.grid__item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+
+}
+
+.grid__item h3 {
+  margin: 20px 0;
+  font-family: $font-special;
+  font-size: 1.3rem;
+  color: $color-green;
+  font-weight: 500;
+  text-align: center;
+}
+
+
+#cultura-tradiciones, #gastronomia{
+  padding-top: 80px;
+}
+
+.section__content{
+  max-width: 1000px;
+  margin: 0 auto; 
+  padding: 0 20px; 
+
+  display: flex;
+  flex-direction: column;
+}
+
+.section__figure {
+
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.section__figure img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 5%;
+    padding-bottom: 20px;
+
+}
+
+.section__figure figcaption{
+  margin-bottom: 20px;
+}
+
+.grid__item img:hover {
+  opacity: 0.5;
+}
+
+.section__text {
+  max-width: 100%;
+  text-align: justify;
+  font-family: $font-principal;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  
+}
+
+.section__figcaption{
+  font-family: $font-principal;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.section__button{
+  align-items: center;
+  margin-left: auto; 
+  margin-right: auto;
+  max-width: 500px;
+}
+
+a.button{
+   display:inline-block;
+   padding: 1.5em 1.5em;
+   margin:2em 0.2em 0.2em 0;
+   border-radius:0.60em;
+   box-sizing: border-box;
+   text-decoration:none;
+   font-family: $font-special;
+   font-weight:400;
+   color: white;
+   text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+   background-color: $color-green;
+   text-align:center;
+   transition: all 0.15s;
+  }
+  a.button:hover{
+   text-shadow: 0 0 2em rgba(255,255,255,1);
+   color: $color-green;
+   border-color: $color-red;
+   border: 0.1em solid $color-green;
+   background-color: white;
+  }
+
+  #recommendation {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    border: 1px solid $color-green;
+    border-radius: 5px;
+    background-color: $color-blue;
+    text-align: center;
+    max-width: 500px;
+    margin-left: auto; 
+    margin-right: auto;
+    visibility: hidden;
+}
+
+#recommendation h3{
+  font-family: $font-principal;
+  margin-bottom: 25px;
+  color: $color-green;
+  font-size: 1.2rem;
+}
+
+#recommendation p{
+  font-family: $font-special;
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+  font-weight: 700;
+  
+}
+
+// Footer
+.footer {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.75rem;
+  text-align: center;
+  font-family: $font-principal;
+}
+
+.footer a{
+  text-decoration: none;
+  color: $color-green;
+}
+
+.footer a:hover{
+  color: $color-red;
+}
+
+// Media query para dispositivos móviles
+@media (max-width: $breakpoint-mobile) {
+  .header {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .header__title {
+    margin: 0;
+    font-size: 3rem;
+
+  }
+
+  .header__nav-container {
+    display: flex;
+    flex-direction: column; // Muestra los elementos uno debajo del otro
+    text-align: center;
+    a {
+        margin-bottom: 10px; // Espacio entre los enlaces de navegación
+    }
+  }
+
+  .hero { 
+    width: 100%;
+    height: auto;
+  
+  }
+
+  .hero__content {
+    width: 50%;
+    margin: 10px;    
+  }
+
+  .hero__image{
+    width: 100%;
+    height: auto;
+  }
+
+  .hero__content--p1{
+    font-size: 1.4rem;
+    }
+    
+    .hero__content--p2 {
+
+    font-size: 1.8rem;
+    }
+
+  .main {
+    margin: 0;
+    
+  }
+
+  .grid__container {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+#cultura-tradiciones, #gastronomia{
+  padding-top: 20px;
+}
+
+.title__section {
+  margin-bottom: 25px;
+  
+}
+
+
+.section__figure {
+  margin-right: 20px;
+  margin-bottom: 0;
+  max-width: 100%;
+}
+
+.section__text {
+  flex: 1;
+}
+
+a.button{
+  display:block;
+  margin:0.4em auto;
+  }
+
+  #recommendation {
+    width: 60%;
+
+}
+
+}
+
+

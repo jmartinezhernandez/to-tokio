@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <title>To Tokyo</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">To Tokyo</h1>
+      <nav class="header__nav">
+        <div class="header__nav-container">
+            <a href="#lugares-interes" class="header__link">Lugares de Interes</a>
+            <a href="#cultura-tradiciones" class="header__link">Cultura y tradiciones</a>
+            <a href="#gastronomia" class="header__link">Gastronomía</a>
+        </div>
+    </nav>    
+    </header>
+    <section id="hero" class="hero">
+        <img src="assets/images/imgHero.jpg" alt="Imagen portada. Castillo Tokyo en otoño" class="hero__image">
+        <div class="hero__content">
+          <p class="hero__content--p1">Let's go <strong class="hero__content--p2">To Tokyo</strong></p>
+        </div>
+    </section>
+    <main class="main">
+      <section id="lugares-interes">
+        <h2 class="title__section">Lugares de Interes</h2>
+        <div class="grid__container">
+          <div class="grid__item">
+            <img loading="lazy" src="assets/images/fuji.jpg">
+            <h3>Monte Fuji</h3>
+          </div>
+          <div class="grid__item">
+            <img loading="lazy" src="assets/images/senso.jpg">
+            <h3>Templo Senso-ji</h3>
+          </div>
+          <div class="grid__item">
+            <img loading="lazy" src="assets/images/skytree.jpg">
+            <h3>Tokio Skytree</h3>
+          </div>
+        </div>    
+      </section>
+        
+      <section id="cultura-tradiciones">
+        <h2 class="title__section">Cultura y tradiciones</h2>
+        <div class="section__content">
+            <figure class="section__figure">
+                <img loading="lazy" src="assets/images/cultura.jpg" alt="Entrada a santuario sintoista repleto de torii y en el centro un sacerdote">
+                <figcaption class="section__figcaption">Explora la esencia espiritual de Tokio a través de sus santuarios sintoístas centenarios.</figcaption>
+            </figure>
+            <div class="section__text">
+                <p>La cultura y tradición de Tokio se caracterizan por una rica combinación de elementos tradicionales y modernos que reflejan la identidad única de la capital japonesa. En Tokio, las costumbres y modales juegan un papel fundamental en la vida diaria, desde el protocolo en los templos hasta la importancia de los baños públicos sento y baños termales onsen como parte integral del estilo de vida japonés.
+                    Además, la ciudad es un crisol de tradiciones y modernidad, donde el arte del Ukiyo-e, un estilo de grabados muy apreciado durante el período Edo, se entrelaza con la escena cultural contemporánea, incluyendo el manga. La danza, los templos budistas, y la arquitectura que combina lo tradicional con lo moderno son aspectos destacados de la cultura tokiota. Por otro lado, Tokio es conocida por su gastronomía diversa y sus restaurantes emblemáticos que reflejan la fusión entre lo autóctono y lo internacional. En resumen, Tokio es una ciudad vibrante que fusiona su rica herencia cultural con la innovación y la creatividad del siglo XXI.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="gastronomia">
+      <h2 class="title__section">Gastronomía</h2>
+      <div class="section__content">
+        <figure class="section__figure">
+          <img loading="lazy" src="assets/images/gastronomia.jpg" alt="Zona de restauración en Shibuya">
+          <figcaption class="section__figcaption">Sumérgete en el vibrante sabor de Tokio con su ecléctica variedad gastronómica en cada esquina.</figcaption>
+        </figure>
+        <div class="section__text">
+          <p>La gastronomía de Tokio es reconocida a nivel mundial por su diversidad y excelencia culinaria. Tokio es considerada la capital gastronómica del mundo, con una amplia variedad de platos tradicionales japoneses y una escena culinaria vibrante. La ciudad alberga el Mercado Toyosu, el mayor mercado mayorista de pescado del mundo, y cuenta con una impresionante cantidad de restaurantes galardonados con estrellas Michelin, superando a París y Nueva York en este aspecto.</p>
+          <p>Los platos más emblemáticos de Tokio incluyen el sushi, elaborado con arroz avinagrado y una variedad de mariscos y verduras; el tempura, una fritura delicada de pescado, mariscos o verduras rebozados; el yakitori, brochetas de pollo a la parrilla; los fideos udon; el monjayaki, un panqueque similar al okonomiyaki; entre otros. Además, Tokio ofrece experiencias gastronómicas únicas como la comida callejera, platos vegetarianos como el Shojin Ryori, y una amplia gama de opciones para todos los gustos.</p>
+        </div>
+          <div class="section__button">
+            <a id="button" class="button" >Recomendación de un plato japonés</a>
+          </div>
+          <div id="recommendation"></div>
+        </div>
+    </section>
+
+    </main>
+    
+    <include src="./views/footer.html"></include>
+    
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  </body>
+</html>
